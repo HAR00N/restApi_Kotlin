@@ -13,7 +13,7 @@ class HelloController {
 
         @GetMapping("/")
         fun readWorld() :String {
-            return SysKeyword().SLASH
+            return SysKeyword.SLASH
         }
 
     }

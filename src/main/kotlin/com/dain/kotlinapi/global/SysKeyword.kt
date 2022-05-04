@@ -1,9 +1,10 @@
 package com.dain.kotlinapi.global
 
 class SysKeyword {
-
-    val SLASH :String = "/"
-    val SLASHS :String = "_"
-    val DOT :String = "."
-    val COMMON_UPDATE_NUMBER :Int = 1;
+    companion object {
+        const val SLASH: String = "/"
+        const val SLASHS: String = "_"
+        const val DOT: String = "."
+        const val COMMON_UPDATE_NUMBER: Int = 1;
+    }
 }

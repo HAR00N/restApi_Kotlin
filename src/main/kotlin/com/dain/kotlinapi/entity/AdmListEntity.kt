@@ -10,7 +10,7 @@ import javax.persistence.Table
 data class AdmListEntity (
     @Id
     @Column(name = "uid")
-    var uid: Long = 0,
+    val uid: Long = 0,
     @Column(name = "user_id")
     var user_id :String = "",
     @Column(name = "password")
