@@ -1,9 +1,8 @@
 package com.dain.kotlinapi.repository
 
-import com.dain.kotlinapi.entity.AdmListEntity
+import com.dain.kotlinapi.entity.AdmListTestEntity
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 
-
 @Repository
-interface ListRepository : JpaRepository<AdmListEntity, Long>
+interface ListTestRepository : JpaRepository<AdmListTestEntity, Long>

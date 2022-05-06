@@ -1,12 +1,13 @@
-package com.dain.kotlinapi.service
+package com.dain.kotlinapi.service.impl
 
 import com.dain.kotlinapi.global.BaseService
-import com.dain.kotlinapi.repository.ListRepository
+import com.dain.kotlinapi.repository.ListTestRepository
+import com.dain.kotlinapi.service.ITestService
 import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Service
 
 @Service
-class ListTestServiceImpl(val listRepository: ListRepository) : ITestService, BaseService() {
+class ListTestServiceImpl(val listRepository: ListTestRepository) : ITestService, BaseService() {
 
     override fun list(): ResponseEntity<*> {
         val list = listRepository.findAll()
